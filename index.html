@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Producto Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Producto Fantástico</h1>
+        <p>Descubre todo lo que puedes hacer con él.</p>
+    </header>
+
+    <nav class="tabs-nav">
+        <button class="tab-button active" data-tab="descripcion">Descripción</button>
+        <button class="tab-button" data-tab="especificaciones">Especificaciones</button>
+        <button class="tab-button" data-tab="reseñas">Reseñas</button>
+        <button class="tab-button" data-tab="contacto">Contacto</button>
+    </nav>
+
+    <main class="tabs-content">
+        <section id="descripcion" class="tab-pane active">
+            <h2>Descripción General</h2>
+            <p>Este producto revolucionario está diseñado para simplificar tu vida. Con su interfaz intuitiva y potentes características, te permitirá alcanzar tus metas de manera más eficiente. ¡Ideal para profesionales y entusiastas por igual!</p>
+            <ul>
+                <li>Diseño elegante y moderno.</li>
+                <li>Fácil de usar y configurar.</li>
+                <li>Compatible con múltiples dispositivos.</li>
+            </ul>
+        </section>
+
+        <section id="especificaciones" class="tab-pane">
+            <h2>Especificaciones Técnicas</h2>
+            <table>
+                <tr>
+                    <th>Característica</th>
+                    <th>Detalle</th>
+                </tr>
+                <tr>
+                    <td>Dimensiones</td>
+                    <td>15cm x 10cm x 2cm</td>
+                </tr>
+                <tr>
+                    <td>Peso</td>
+                    <td>200g</td>
+                </tr>
+                <tr>
+                    <td>Material</td>
+                    <td>Aleación de aluminio y plástico reciclado</td>
+                </tr>
+                <tr>
+                    <td>Conectividad</td>
+                    <td>Bluetooth 5.0, Wi-Fi 802.11ac</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="reseñas" class="tab-pane">
+            <h2>Reseñas de Clientes</h2>
+            <article class="review">
+                <h3>"¡Increíble!" - Ana M.</h3>
+                <p>Compré este producto la semana pasada y estoy absolutamente fascinada. Superó todas mis expectativas.</p>
+            </article>
+            <article class="review">
+                <h3>"Producto sólido y útil" - Carlos P.</h3>
+                <p>Es muy robusto y la calidad de construcción es excelente. Lo recomiendo sin dudarlo.</p>
+            </article>
+            <article class="review">
+                <h3>"Excelente" - Carlos P.</h3>
+                <p>Esto funciona</p>
+            </article>
+        </section>
+
+        <section id="contacto" class="tab-pane">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <p><small>(Nota: Este formulario no es funcional en GitHub Pages, es solo un ejemplo de diseño).</small></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Compañía. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
